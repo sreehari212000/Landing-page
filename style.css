@@ -1,0 +1,151 @@
+@font-face {
+    font-family: Epilogue;
+    src: url('https://fonts.google.com/specimen/Epilogue');
+}
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Epilogue';
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 300px;
+    padding: 17px 10px;
+}
+.nav-md-left{
+    display: none;
+}
+.nav-md-right{
+    display: none;
+}
+/* side navigation bar on small devices */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+.sidenav  a:hover {
+    color: #141414;
+}
+
+  /* ---------------- */
+.section-right > img{
+    max-width: 100%;
+    height: auto;
+}
+.img-md{
+    display: none;
+}
+.container{
+    margin: 0 auto;
+    width: fit-content;
+}
+.section {
+    text-align: center;
+    margin: 50px 12px;
+}
+.btn{
+    margin-top: 12px;
+    padding: 10px 20px;
+    background-color: #141414;
+    color: #fafafa;
+    border-radius: 10px;
+}
+.btn:hover {
+    background-color: #fafafa;
+    color: #141414;
+    transition: all ease-in 300ms;
+    cursor: pointer;
+}
+footer{
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.8em;
+}
+.register-btn{
+    background-color: #fafafa;
+    color: #141414;
+    outline: 1px solid #696969;
+}
+
+@media (min-width: 751px) {
+    .navbar{
+        margin: 0 2em;
+    }
+    .menu-btn{
+        display: none;
+    }
+    .nav-left{
+        display: flex;
+    }
+    .nav-md-left{
+        display: block;
+        display: flex;
+        margin: 0 2em;
+    }
+    .nav-md-left > p{
+        margin: 0 1.5em;
+    }
+    .nav-md-right{
+        display: block;
+    }
+    .nav-md-right{
+        display: flex;
+        align-items: center;
+    }
+    .nav-md-right > p{
+        margin: 0 1em;
+    }
+    .sidenav{
+        display: none;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        height: 80vh;
+        margin: 0 auto;
+        padding: 0 1em;
+        max-width: 1200px;
+    }
+    .img-sm{
+        display: none;
+    }
+    .section-right{
+        order: 2;
+    }
+    .img-md{
+        display: inline-block;
+        object-fit: contain;
+        max-height: 500px;
+    }
+    .section-left{
+        margin: 0 2em;
+    }
+    .section > h1{
+        text-align: start;
+        font-size: 5.2rem;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar">
+
+      <div class="nav-left">
+        <img class="logo" src="./images/logo.svg" alt="">
+        <div class="nav-md-left">
+          <p>Features</p>
+          <p>Company</p>
+          <p>Careers</p>
+          <p>About</p>
+        </div>
+      </div>
+      
+      <div class="nav-right">
+        <img onclick="openNav()" class="menu-btn" src="./images/icon-menu.svg" alt="">
+        <div class="nav-md-right">
+          <p>Login</p>
+          <p class="btn register-btn">Register</p>
+        </div>
+      </div>
+
+      <div id="mySidenav" class="sidenav">
+        <a  class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Features</a>
+        <a href="#">Company</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="section-right">
+        <img class="img-sm" src="./images/image-hero-mobile.png" alt="">
+        <img class="img-md" src="./images/image-hero-desktop.png" alt="">
+      </div>
+
+      <div class="section-left">
+        <section class="section">
+          <h1>Make remote work</h1>
+          <p>Get your team in sync, no matter your location. Streamline processes, 
+            create team rituals, and watch productivity soar.</p>
+          <button class="btn">Learn more</button>
+        </section>
+  
+      <footer>
+        <img src="./images/client-databiz.svg" alt="">
+        <img src="./images/client-audiophile.svg" alt="">
+        <img src="./images/client-maker.svg" alt="">
+        <img src="./images/client-meet.svg" alt="">
+      </footer>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
